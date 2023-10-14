@@ -1,9 +1,11 @@
 function isPalindrome(string) {
   // Start coding here
+  string = string.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const charArray = string.split('');
+  const reversedCharArray = charArray.reverse();
+  const reversedString = reversedCharArray.join('');
+  return string === reversedString;
 }
-const cleanString = string.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-const reversedString = cleanString.split('').reverse().join('');
-return cleanString === reversedString;
 
 //Example case
 console.log(isPalindrome("reviver"));// true
