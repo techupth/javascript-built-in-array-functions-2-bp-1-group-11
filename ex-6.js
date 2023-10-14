@@ -4,7 +4,7 @@ function updateCarCollection(carBrand) {
   // Start coding here
   if (carCollection.includes(carBrand)) {
     const position = carCollection.indexOf(carBrand) + 1
-    return `${carBrand} already exists in ${position} position of the car collection.`;
+    return `${carBrand} has already existed in the ${position} position of car collection.`;
   } else {
     carCollection.push(carBrand);
     return `new car collection is: ${carCollection.join(",")}.`;
