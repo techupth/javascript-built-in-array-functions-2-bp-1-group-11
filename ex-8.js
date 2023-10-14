@@ -375,4 +375,5 @@ const bills = [
 
 // Start coding here
 
-const totalPaidByLocation;
+const totalPaidByLocation  = calculateTotalPaidByLocation(bills);
+console.log(totalPaidByLocation);
